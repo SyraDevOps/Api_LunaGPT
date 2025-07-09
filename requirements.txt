@@ -1,31 +1,19 @@
-﻿click==8.1.8
-colorama==0.4.6
-filelock==3.17.0
-fsspec==2025.3.0
-Jinja2==3.1.6
-joblib==1.4.2
-MarkupSafe==3.0.2
-mpmath==1.3.0
-networkx==3.4.2
-nltk==3.9.1
-numpy==2.2.3
-pandas==2.2.3
-python-dateutil==2.9.0.post0
-pytz==2025.1
-regex==2024.11.6
-scikit-learn==1.6.1
-scipy==1.15.2
-setuptools==76.0.0
-six==1.17.0
-sympy==1.13.1
-threadpoolctl==3.5.0
-torch==2.6.0
-tqdm==4.67.1
-typing_extensions==4.12.2
-tzdata==2025.1
-fastapi
-uvicorn[standard]
-pydantic
-transformers
+# --- Requirements for Quantum Chatbot API ---
+
+# Core deep learning framework, required by sentence-transformers
 torch
-scikit-learn
+
+# The main library for generating semantic sentence embeddings
+sentence-transformers
+
+# Used for efficient data loading and manipulation from CSV files
+pandas
+
+# High-performance web framework for building the API
+fastapi
+
+# ASGI server to run the FastAPI application
+uvicorn[standard]
+
+# SQLite is part of the Python standard library, no installation needed.
+# numpy is installed as a dependency of torch and pandas.
